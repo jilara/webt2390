@@ -104,16 +104,16 @@ $(document).ready(function(){
     $('#contact-form').submit(function(e){
         e.preventDefault();
         
-        // Get form data
+      
         var formData = $(this).serialize();
         
-        // Submit form data via AJAX
+       
         $.ajax({
             type: 'POST',
-            url: 'submit.php', // Change to your PHP script URL
+            url: 'submit.php', 
             data: formData,
             success: function(response){
-                $('#response').fadeIn(); // Show the response text with a fade-in effect
+                $('#response').fadeIn(); 
             }
         });
     });
