@@ -1,0 +1,327 @@
+
+header {
+text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+main {
+    color: white;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+footer {
+text-align: center;
+color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #afafaf;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #a5a5a5;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #000000;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #000000;
+}
+
+.accordion-header {
+    background-color: #a3a3a3;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: rgba(1, 68, 1, 0.493);
+    color: white;
+}
+
+#resources {
+    padding: 50px 0;
+    text-align: center; 
+    
+}
+
+#resources ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+#resources ul li {
+    margin-bottom: 10px;
+}
+
+#resources ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+#resources ul li button {
+    background-color: #4c6650;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+#three-column-section {
+    display: flex;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #a5a5a5;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+#technology-advancements {
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 33%;
+    background-color: #a5a5a5;
+    color: #000000;
+    
+}
+
+#technology-advancements h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#technology-advancements p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    
+    
+}
+
+.carousel {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+    transition: transform 2s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.nav-item:hover a {
+    color: #1201ff; 
+}
+
+.accordion-header:hover {
+    background-color: #3e2ce7; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+    flex: 0 0 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #8a9bad;
+}
+
+#response {
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    width: 100%; 
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; 
+    }
+}
+
+.containerB {
+
+    width: 80%;
+    margin: 50px auto;
+    background-color: #afafaf;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    
+}
