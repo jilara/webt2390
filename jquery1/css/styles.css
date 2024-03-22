@@ -1,6 +1,15 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
 
+/* Header */
 header {
-text-align: center;
+    text-align: center;
     color: white;
     margin: 20px;
 }
@@ -11,23 +20,18 @@ text-align: center;
     margin: 10px;
 }
 
+/* Main content */
 main {
     color: white;
-   
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-}
-
+/* Footer */
 footer {
-text-align: center;
-color: #ffffff;
+    text-align: center;
+    color: #fff;
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: 50px auto;
@@ -40,9 +44,10 @@ color: #ffffff;
     justify-content: space-between;
 }
 
+/* Navbar */
 .navbar {
     background-color: #a5a5a5;
-    color: #000000;
+    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,12 +69,12 @@ color: #ffffff;
 
 .nav-item a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
     transition: color 0.3s ease;
 }
 
 .nav-item a:hover {
-    color: #000000;
+    color: #000;
 }
 
 .navbar-toggle {
@@ -85,38 +90,14 @@ color: #ffffff;
     margin: 3px 0;
 }
 
-.content {
-    padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar-nav {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 55px;
-        left: 0;
-        width: 100%;
-    }
-
-    .nav-item {
-        margin: 0;
-        text-align: center;
-    }
-
-    .navbar-toggle {
-        display: flex;
-    }
-}
-
+/* Accordion */
 .accordion {
     max-width: 600px;
     margin: 0 auto;
 }
 
 .accordion-item {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #000;
 }
 
 .accordion-header {
@@ -133,17 +114,16 @@ color: #ffffff;
     color: white;
 }
 
+/* Resources */
 #resources {
     padding: 50px 0;
-    text-align: center; 
-    
+    text-align: center;
 }
 
 #resources ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    
 }
 
 #resources ul li {
@@ -152,46 +132,41 @@ color: #ffffff;
 
 #resources ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
 }
-
-
 
 #resources ul li button {
     background-color: #4c6650;
-    color: #ffffff;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
 }
 
-
+/* Three column section */
 #three-column-section {
     display: flex;
-    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background-color: #a5a5a5;
 }
 
 .column {
-    float: left;
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
 }
 
-
+/* Technology advancements */
 #technology-advancements {
     padding: 50px 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
     width: 33%;
     background-color: #a5a5a5;
-    color: #000000;
-    
+    color: #000;
 }
 
 #technology-advancements h2 {
@@ -202,10 +177,9 @@ color: #ffffff;
 #technology-advancements p {
     line-height: 1.6;
     margin-bottom: 15px;
-    
-    
 }
 
+/* Carousel */
 .carousel {
     position: relative;
     margin: auto;
@@ -228,7 +202,8 @@ img {
     height: auto;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -247,14 +222,18 @@ img {
     right: 0;
 }
 
+/* Hover effects */
 .nav-item:hover a {
-    color: #1201ff; 
+    color: #1201ff;
 }
+
+
 
 .accordion-header:hover {
-    background-color: #3e2ce7; 
+    background-color: #3e2ce7;
 }
 
+/* Form */
 .form-group {
     margin-bottom: 20px;
     flex: 0 0 48%;
@@ -263,7 +242,7 @@ img {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #ffffff;
+    color: #fff;
 }
 
 input[type="text"],
@@ -290,38 +269,19 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
 }
 
 button:hover {
     background-color: #8a9bad;
 }
 
+/* Response message */
 #response {
     margin-top: 20px;
     text-align: center;
     color: #007bff;
 }
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-    width: 100%; 
-}
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%; 
-    }
-}
-
-.containerB {
-
-    width: 80%;
-    margin: 50px auto;
-    background-color: #afafaf;
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    
+#resources ul li button:hover {
+    background-color: #6c757d;
 }
