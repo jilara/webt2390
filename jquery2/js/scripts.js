@@ -6,7 +6,7 @@ $(document).ready(function(){
         var altSrc = $(this).data('alt-src');
         
         // Check if the current source is the original or alternative
-        if ($img.data('current-src') === 'original') {
+        if ($img.data('current-src') === 'original' || typeof $img.data('current-src') === 'undefined') {
             $img.attr('src', altSrc);
             $img.data('current-src', 'alternative');
         } else {
