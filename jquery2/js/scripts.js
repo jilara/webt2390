@@ -10,4 +10,9 @@ $(document).ready(function(){
             $img.attr('src', altSrc);
         } 
     });
+    // pic swap gallery
+    $('.thumbnails img').click(function(){
+        var newSrc = $(this).attr('src');
+        $('.main-image img').attr('src', newSrc);
+    });
 });
