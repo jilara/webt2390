@@ -5,13 +5,9 @@ $(document).ready(function(){
         var originalSrc = $img.attr('src');
         var altSrc = $(this).data('alt-src');
         
-        // Check if the current source is the original or alternative
-        if ($img.data('current-src') === 'original' || typeof $img.data('current-src') === 'undefined') {
+        // Toggle between original and alternative images
+        if ($img.attr('src') === originalSrc) {
             $img.attr('src', altSrc);
-            $img.data('current-src', 'alternative');
-        } else {
-            $img.attr('src', originalSrc);
-            $img.data('current-src', 'original');
-        }
+        } 
     });
 });
