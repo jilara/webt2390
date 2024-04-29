@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+main {
+    padding: 20px;
+    background: white;
+    margin-top: 20px;
+}
+
+
+.hero {
+    color: white;
+    background-image: url('../images/flowersbkg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,26 @@
+
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category-item {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.category-item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+h3 {
+    color: #333;
+    padding: 5px 0;
+}
